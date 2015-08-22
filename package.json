@@ -1,0 +1,23 @@
+{
+  "name": "css-specificity",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "repository": "https://github.com/olmokramer/atom-css-specificity",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "object-assign-shim": "^1.0.0",
+    "specificity": "^0.1.4"
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "1.0.0": "consumeStatusBar"
+      }
+    }
+  }
+}

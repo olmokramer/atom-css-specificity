@@ -1,0 +1,30 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+css-specificity-detail {
+  display: block;
+
+  .whitespace {
+    min-width: 1em;
+  }
+
+  .panel-body {
+    display: flex;
+    text-align: center;
+
+    .inline-block {
+      flex: 1 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: @component-padding;
+
+      :last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

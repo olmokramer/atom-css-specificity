@@ -1,0 +1,25 @@
+* {
+  color: black;
+}
+
+ul#nav li {
+  display: inline-block;
+}
+
+ul#nav li > ul.sub-menu,
+ul#nav li > ul.sub-menu li {
+  display: none;
+}
+
+ul#nav li > ul.sub-menu li {
+  display: block;
+}
+
+ul#nav li:last-child {
+  border-bottom: none;
+}
+
+h1,
+.title {
+  font-size: 2em;
+}

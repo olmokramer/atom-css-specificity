@@ -1,3 +1,6 @@
+## 0.1.2
+* Fix detail view overflow
+
 ## 0.1.1
 * Fix issue when there were comments between CSS blocks
 

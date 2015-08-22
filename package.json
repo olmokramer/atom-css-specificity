@@ -1,9 +1,12 @@
 {
   "name": "css-specificity",
   "main": "./lib/main.js",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Show the specificity of selectors in a CSS file in Atom",
-  "keywords": ["css", "specificity"],
+  "keywords": [
+    "css",
+    "specificity"
+  ],
   "repository": "https://github.com/olmokramer/atom-css-specificity",
   "license": "MIT",
   "engines": {

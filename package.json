@@ -1,7 +1,7 @@
 {
   "name": "css-specificity",
   "main": "./lib/main.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Show the specificity of selectors in a CSS file in Atom",
   "keywords": [
     "css",

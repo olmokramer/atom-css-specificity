@@ -1,3 +1,6 @@
+## 0.1.3
+* Add multiple cursor support
+
 ## 0.1.2
 * Fix detail view overflow
 

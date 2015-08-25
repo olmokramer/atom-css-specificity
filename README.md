@@ -6,7 +6,7 @@ Adds a status bar item that shows the specificity of the selector of the block o
 
 ## TODO
 
-* [ ] Add support for multiple cursors
+* [x] Add support for multiple cursors
 * [ ] Add support for LESS, SCSS, SASS and Stylus
 
 ## Credits

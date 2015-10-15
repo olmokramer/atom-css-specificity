@@ -3,19 +3,13 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
-@import "syntax-variables";
-
-@inline-color: @syntax-text-color;
-@ids-color: @syntax-color-function;
-@classes-color: @syntax-color-attribute;
-@elements-color: @syntax-color-variable;
 
 css-specificity-status[data-highlight],
 css-specificity-detail {
-  .inline { color: @inline-color; }
-  .ids { color: @ids-color; }
-  .classes { color: @classes-color; }
-  .elements { color: @elements-color; }
+  .inline { color: @text-color-subtle; }
+  .ids { color: @text-color-warning; }
+  .classes { color: @text-color-success; }
+  .elements { color: @text-color-info; }
 }
 
 css-specificity-detail {

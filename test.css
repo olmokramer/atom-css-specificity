@@ -2,6 +2,10 @@
   color: black;
 }
 
+ul[id="nav"] {
+  display: block;
+}
+
 ul#nav li {
   display: inline-block;
 }

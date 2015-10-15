@@ -3,29 +3,19 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
+@import "syntax-variables";
 
-.inline(@prop, @color) {
-  .inline { @{prop}: @color; }
-}
-
-.ids(@prop, @color) {
-  .ids { @{prop}: @color; }
-}
-
-.classes(@prop, @color) {
-  .classes { @{prop}: @color; }
-}
-
-.elements(@prop, @color) {
-  .elements { @{prop}: @color; }
-}
+@inline-color: @syntax-text-color;
+@ids-color: @syntax-color-function;
+@classes-color: @syntax-color-attribute;
+@elements-color: @syntax-color-variable;
 
 css-specificity-status[data-highlight],
-css-specificity-detail .panel-heading {
-    .inline(color, @text-color-error);
-    .ids(color, @text-color-warning);
-    .classes(color, @text-color-success);
-    .elements(color, @text-color-info);
+css-specificity-detail {
+  .inline { color: @inline-color; }
+  .ids { color: @ids-color; }
+  .classes { color: @classes-color; }
+  .elements { color: @elements-color; }
 }
 
 css-specificity-detail {
@@ -35,26 +25,39 @@ css-specificity-detail {
   -webkit-user-select: none;
   user-select: none;
 
+  .panel-heading {
+    margin-bottom: @component-padding;
+    padding: 0;
+  }
+
   .panel-body {
     display: flex;
+    flex-direction: row;
     text-align: center;
-    color: @text-color-highlight;
 
     .inline-block {
       flex: 1 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      border-radius: @component-border-radius;
       padding: @component-padding;
+      background-color: @tool-panel-background-color;
 
       :last-child {
         margin-bottom: 0;
       }
     }
 
-    .inline(background-color, @background-color-error);
-    .ids(background-color, @background-color-warning);
-    .classes(background-color, @background-color-success);
-    .elements(background-color, @background-color-info);
+    .count,
+    .type {
+      color: inherit;
+    }
+
+    .count {
+      font-size: 2.5em;
+      margin-bottom: 0;
+      line-height: 1.3;
+    }
   }
 }

@@ -16,6 +16,13 @@
     "object-assign-shim": "^1.0.0",
     "specificity": "^0.1.4"
   },
+  "providedServices": {
+    "css-specificity-detail-view": {
+      "versions": {
+        "1.0.0": "provideCSSDetailViewService"
+      }
+    }
+  },
   "consumedServices": {
     "status-bar": {
       "versions": {

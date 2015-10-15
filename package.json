@@ -22,5 +22,9 @@
         "1.0.0": "consumeStatusBar"
       }
     }
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.3",
+    "eslint": "^1.6.0"
   }
 }

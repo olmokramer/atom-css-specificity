@@ -4,6 +4,30 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
+.inline(@prop, @color) {
+  .inline { @{prop}: @color; }
+}
+
+.ids(@prop, @color) {
+  .ids { @{prop}: @color; }
+}
+
+.classes(@prop, @color) {
+  .classes { @{prop}: @color; }
+}
+
+.elements(@prop, @color) {
+  .elements { @{prop}: @color; }
+}
+
+css-specificity-status[data-highlight],
+css-specificity-detail .panel-heading {
+    .inline(color, @text-color-error);
+    .ids(color, @text-color-warning);
+    .classes(color, @text-color-success);
+    .elements(color, @text-color-info);
+}
+
 css-specificity-detail {
   display: block;
   max-height: 80vh;
@@ -14,6 +38,7 @@ css-specificity-detail {
   .panel-body {
     display: flex;
     text-align: center;
+    color: @text-color-highlight;
 
     .inline-block {
       flex: 1 0;
@@ -26,5 +51,10 @@ css-specificity-detail {
         margin-bottom: 0;
       }
     }
+
+    .inline(background-color, @background-color-error);
+    .ids(background-color, @background-color-warning);
+    .classes(background-color, @background-color-success);
+    .elements(background-color, @background-color-info);
   }
 }

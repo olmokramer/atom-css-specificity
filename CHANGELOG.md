@@ -1,6 +1,7 @@
 ## 0.2.0
 * Add a service provider for the detail view so other packages can show it with arbitrary selectors
-* Add setting to show the selector in the status bar
+* Add setting to format the text in the status bar
+* Add setting for highlighting in the status bar
 * Fix an issue on Atom startup when a CSS file was open (#1)
 
 ## 0.1.3

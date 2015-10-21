@@ -1,3 +1,7 @@
+## 0.2.1
+* Fix issue where the plugin wouldn't be enabled for an editor when it doesn't start with the `source.css` grammar, but later changes its grammar to `source.css`
+* Fix deprecations
+
 ## 0.2.0
 * Add a service provider for the detail view so other packages can show it with arbitrary selectors
 * Add setting to format the text in the status bar
